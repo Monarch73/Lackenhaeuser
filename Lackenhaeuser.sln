@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lackenhaeuser", "Lackenhaeuser.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DHT-sensor-library-1.3.8-1.3.8", "..\..\..\..\Program Files (x86)\Arduino\libraries\DHT-sensor-library-1.3.8\DHT-sensor-library-1.3.8-1.3.8.vcxitems", "{3A857631-B768-43E2-9F70-1A99CC2D278A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LiquidCrystal_I2C-1.1.2-1.1.2", "..\..\..\..\Program Files (x86)\Arduino\libraries\LiquidCrystal_I2C-1.1.2\LiquidCrystal_I2C-1.1.2-1.1.2.vcxitems", "{EFC2AA13-E449-4DD4-88C6-20FE6ED28D9B}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\..\..\Program Files (x86)\Arduino\libraries\DHT-sensor-library-1.3.8\DHT-sensor-library-1.3.8-1.3.8.vcxitems*{3a857631-b768-43e2-9f70-1a99cc2d278a}*SharedItemsImports = 9
+		..\..\..\..\Program Files (x86)\Arduino\libraries\DHT-sensor-library-1.3.8\DHT-sensor-library-1.3.8-1.3.8.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		..\..\..\..\Program Files (x86)\Arduino\libraries\LiquidCrystal_I2C-1.1.2\LiquidCrystal_I2C-1.1.2-1.1.2.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		..\..\..\..\Program Files (x86)\Arduino\libraries\LiquidCrystal_I2C-1.1.2\LiquidCrystal_I2C-1.1.2-1.1.2.vcxitems*{efc2aa13-e449-4dd4-88c6-20fe6ed28d9b}*SharedItemsImports = 9
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.Build.0 = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A214B633-FBDA-4875-AF66-A19943B547E7}
+	EndGlobalSection
+EndGlobal
