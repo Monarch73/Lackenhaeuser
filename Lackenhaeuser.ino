@@ -137,6 +137,7 @@ void loop()
 	  {
 		  Serial.println("Trockner an");
 		  switchTrockner = 1;
+		 
 		  rcSwitch_s.switchOn(CODEHOUSE, CODEDRYER);
 	  }
   }
@@ -155,6 +156,7 @@ skipIndoor:
   if (outdoorTemp == 1001.0)
   {
 	  Serial.println("Skiping Outdoor");
+	  switchHeizung = 1;
 	  goto skipOutdoor;
   }
 
@@ -179,5 +181,34 @@ skipIndoor:
 
 skipOutdoor:
   onoff++;
+
+  if (onoff > 15)
+  {
+	  onoff = 0;
+	  lcd.setCursor(15, 0);
+	  if (switchHeizung != 0)
+	  {
+		  lcd.print(F("1"));
+		  rcSwitch_s.switchOn(CODEHOUSE, CODEHEATER);
+	  }
+	  else
+	  {
+		  lcd.print(F("0"));
+		  rcSwitch_s.switchOff(CODEHOUSE, CODEHEATER);
+	  }
+
+	  lcd.setCursor(15, 1);
+	  if (switchTrockner != 0)
+	  {
+		  lcd.print(F("1"));
+		  rcSwitch_s.switchOn(CODEHOUSE, CODEDRYER);
+	  }
+	  else
+	  {
+		  lcd.print(F("0"));
+		  rcSwitch_s.switchOff(CODEHOUSE, CODEDRYER);
+	  }
+  }
+
   delay(1000);
 }
